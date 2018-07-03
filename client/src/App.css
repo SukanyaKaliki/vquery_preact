@@ -26,3 +26,54 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.header-content{
+  text-align: center;
+  background: #ccc;
+  line-height: 100px;
+  float: left;
+  width: 100%;  
+}
+.header-content h2{
+  float: left;
+  width: 90%;
+  margin: 0px;
+}
+.header-content .sign-out{
+  float: right;
+  width: 10%;
+  color: #186ae6;
+  font-weight: bold;
+  line-height: 100px;
+}
+.menu-content{
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+.menu-content ul{
+  margin: 10px;
+  list-style: none;
+}
+.menu-content ul li{
+  display: inline;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  margin: 0 8px 0 0;
+}
+.menu-content ul li:hover, .menu-content ul li.active{
+  background: #cd040b;
+}
+.menu-content ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 14px;
+  font-weight: bold;
+}
+.main-content{
+  width: 100%;
+  text-align: center;
+  margin: 20px 10px;
+  float: left;
+}

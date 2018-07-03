@@ -34,28 +34,32 @@ class App extends Component {
   };
 
   render() {
-    return (
+    return (      
       <div className="App">
-        <header className="App-header">
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">{this.state.response}</p>
+        <p className="App-intro">{this.state.response}</p> */}
       
       { <Router>
       <div>
-         <h2>Welcome to Verizon Job Portal</h2>
-         <ul>
-            <li><Link to={'../'}>Career Home</Link></li>
+         <div class="header-content">
+            <h2>Welcome to Verizon Job Portal</h2>
+            <a class="sign-out">Sign Out</a>
+         </div>
+         <div class="menu-content">
+           <ul>
+            <li class="active"><Link to={'../'}>Career Home</Link></li>
             <li><Link to={'../app/jobSearch'}>Job Search</Link></li>
             <li><Link to={'../app/savedJobs'}>Saved Jobs</Link></li>
             <li><Link to={'../app/appliedJobs'}>Applied Jobs</Link></li>
             <li><Link to={'../app/timelines'}>Timelines</Link></li>                   
             <li><Link to={'../app/feedback'}>Feedback</Link></li>
             <li><Link to={'../app/verizonInfo'}>Verizon Info</Link></li>
-         </ul>
-         <hr />
-         
+           </ul>
+         </div>
+         <div class="main-content">
          <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/app/jobSearch' component={JobSearch} />
@@ -65,6 +69,7 @@ class App extends Component {
             <Route exact path='/app/feedback' component={Feedback} />
             <Route exact path='/app/verizonInfo' component={VerizonInfo} />
          </Switch>
+         </div>
       </div>
    </Router> }
    </div>
