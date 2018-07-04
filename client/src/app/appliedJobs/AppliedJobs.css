@@ -1,0 +1,46 @@
+html {
+    font-family: "helvetica neue", arial, sans-serif !important;
+}
+
+.savedJobsDiv {
+    height: 20vh;
+    background-color: #E7ECEF;
+    clear: both;
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.JobsDiv {
+    display: block;
+    padding: 25px 25px 5px;
+    position: relative;
+}
+
+.featredJobTitle {
+    position: absolute;
+    top: 26px;
+    left: 7px;
+}
+
+.jobTitleDiv {
+    height: 4vh;
+}
+
+.experienceDiv {
+    height: 4vh;
+}
+
+.keySkillsDiv {
+    height: 4vh;
+}
+
+.image {
+    width:22px;
+    height:22px;
+}
+
+.hidden {
+    display:none;
+}

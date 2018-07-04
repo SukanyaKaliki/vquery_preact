@@ -1,0 +1,33 @@
+html {
+    font-family: "helvetica neue", arial, sans-serif !important;
+}
+
+label.required:after {content: " *"; color: red;}
+
+.red {
+    color: red;
+}
+
+.textBox {
+    margin-left: 10px;
+    width: 30%;
+}
+
+.labelDiv {
+    margin-bottom:10px;
+}
+
+.submitBtn {
+    background: rgb(205,4,11) none repeat scroll 0 0;
+    color: rgb(255,255,255);
+    font-weight: bold;
+    text-shadow: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border: medium none;
+    box-shadow: none !important;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    padding: 10px 15px 10px 15px;
+}

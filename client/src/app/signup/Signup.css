@@ -1,0 +1,63 @@
+html {
+    font-family: "helvetica neue", arial, sans-serif !important;
+}
+
+label.required:after {content: " *"; color: red;}
+
+.red {
+    color: red;
+}
+
+.textBox {
+    margin-left: 10px;
+    width: 30%;
+}
+
+.labelDiv {
+    margin-bottom:10px;
+}
+
+.submitBtn {
+    background: rgb(205,4,11) none repeat scroll 0 0;
+    color: rgb(255,255,255);
+    font-weight: bold;
+    text-shadow: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border: medium none;
+    box-shadow: none !important;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    padding: 10px 15px 10px 15px;
+}
+
+.firstNameInput {
+    margin-left: 3.7rem;
+    width: 30%;
+}
+
+.lastNameInput {
+    margin-left: 3.7rem;
+    width: 30%;
+}
+
+.emailInput {
+    margin-left: 2.1rem;
+    width: 30%;
+}
+
+.typeInput {
+    margin-left: 6.4rem;
+    width: 30%;
+}
+
+.contactNoInput {
+    margin-left: 1.5rem;
+    width: 30%;
+}
+
+.pwdInput {
+    margin-left: 4.2rem;
+    width: 30%; 
+}
