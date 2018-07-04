@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './app/home/Home.jsx';
-import JobSearch from './app/jobSearch/JobSearch.jsx';
 import SavedJobs from './app/savedJobs/SavedJobs.jsx';
 import AppliedJobs from './app/appliedJobs/AppliedJobs.jsx';
 import Timelines from './app/timelines/Timelines.jsx';
@@ -51,7 +50,7 @@ class App extends Component {
          <div class="menu-content">
            <ul>
             <li class="active"><Link to={'../'}>Career Home</Link></li>
-            <li><Link to={'../app/jobSearch'}>Job Search</Link></li>
+            
             <li><Link to={'../app/savedJobs'}>Saved Jobs</Link></li>
             <li><Link to={'../app/appliedJobs'}>Applied Jobs</Link></li>
             <li><Link to={'../app/timelines'}>Timelines</Link></li>                   
@@ -62,7 +61,7 @@ class App extends Component {
          <div class="main-content">
          <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/app/jobSearch' component={JobSearch} />
+      
             <Route exact path='/app/savedJobs' component={SavedJobs} />
             <Route exact path='/app/appliedJobs' component={AppliedJobs} />
             <Route exact path='/app/timelines' component={Timelines} />
