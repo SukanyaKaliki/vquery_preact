@@ -42,14 +42,16 @@ class Home extends Component {
                 <div className={"JobsDiv"}>
                     <div className={"jobTitleDiv"}>{job.jobTitle}</div>
                     <div className={"experienceDiv"}>
-                        <img src={ experience } className={"image"} />
-                        {job.experience} <img src={ location } className={"image"} /> {job.location}
+                        <img src={ experience } className={"image"} /> {job.experience} 
                     </div>
-                    <div className={"keySkillsDiv"}>Key Skills : {job.keySkills}     
+                    <div className="{locationDiv}">
+                        <img src={ location } className={"image"} /> {job.location}
+                    </div>
+                    <div className={"keySkillsDiv"}>{job.keySkills}     
                         <img src={ blackStar } className={job.savedJob === 'true'? 'hidden' : 'image'} onClick={(e) => this.saveJob(job.jobId, e)}/>
                         <img src={ redStar } className={job.savedJob === 'true'? 'image' : 'hidden'} onClick={(e) => this.unSaveJob(job.jobId, e)}/>
                     </div>
-                    <div><button onClick={(e) => this.applyForJob(job.jobId, e)}>Apply</button></div>
+                    <div class="center"><button onClick={(e) => this.applyForJob(job.jobId, e)}>Apply</button></div>
                 </div>
             </div>
             );
@@ -57,6 +59,13 @@ class Home extends Component {
       return (
          <div>
             <h2>All Jobs</h2>
+            <div class="job-header">
+                <div class="job-head title">Job Title</div>
+                <div class="job-head location">Experience</div>
+                <div class="job-head location">Location</div>
+                <div class="job-head skills">Skills</div>
+                <div class="job-head status center">Status</div>
+            </div>
             {rows}
          </div>         
       );

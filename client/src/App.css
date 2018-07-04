@@ -29,21 +29,30 @@
 .header-content{
   text-align: center;
   background: #ccc;
-  line-height: 100px;
   float: left;
   width: 100%;  
 }
 .header-content h2{
   float: left;
-  width: 90%;
+  width: 80%;
   margin: 0px;
+  line-height: 100px;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 1.725rem;
+}
+.container{
+    display: inline-block;
+    width: 850px;
+    margin: 0px auto;
 }
 .header-content .sign-out{
   float: right;
   width: 10%;
   color: #186ae6;
   font-weight: bold;
-  line-height: 100px;
+  position: relative;
+  top: 70px;
 }
 .menu-content{
   float: left;
@@ -74,6 +83,38 @@
 .main-content{
   width: 100%;
   text-align: center;
-  margin: 20px 10px;
+  margin: 20px 0px;
   float: left;
+}
+.job-header{
+  width: 850px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+.job-head {
+  width: 18%;
+  display: inline-block;
+  padding: 1%;
+}
+.JobsDiv {
+  padding: 15px 0px !important;
+  position: relative;
+  text-align: left;
+}
+.JobsDiv > div{
+  width: 18%;
+  display: inline-block;
+  padding: 1%;
+}
+.center{
+  text-align: center !important;
+}
+.allJobsDiv {
+  background-color: #E7ECEF;
+  clear: both;
+  position: relative;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 1rem;
 }

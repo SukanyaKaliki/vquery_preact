@@ -44,10 +44,13 @@ class App extends Component {
       { <Router>
       <div>
          <div class="header-content">
-            <h2>Welcome to Verizon Job Portal</h2>
-            <a class="sign-out">Sign Out</a>
+            <div class="container">
+              <h2>Welcome to Verizon Job Portal</h2>
+              <a class="sign-out">Sign Out</a>
+            </div>
          </div>
          <div class="menu-content">
+          <div class="container">
            <ul>
             <li class="active"><Link to={'../'}>Career Home</Link></li>
             
@@ -57,8 +60,10 @@ class App extends Component {
             <li><Link to={'../app/feedback'}>Feedback</Link></li>
             <li><Link to={'../app/verizonInfo'}>Verizon Info</Link></li>
            </ul>
+           </div>
          </div>
          <div class="main-content">
+         <div class="container">
          <Switch>
             <Route exact path='/' component={Home} />
       
@@ -68,6 +73,7 @@ class App extends Component {
             <Route exact path='/app/feedback' component={Feedback} />
             <Route exact path='/app/verizonInfo' component={VerizonInfo} />
          </Switch>
+         </div>
          </div>
       </div>
    </Router> }
